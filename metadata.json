@@ -1,0 +1,6 @@
+{
+  "name": "Defensa contra Mutaciones Indeseadas",
+  "description": "Explora cómo las células defienden su genoma contra mutaciones indeseadas, descubriendo sus mecanismos de reparación y construyendo un modelo de sus decisiones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

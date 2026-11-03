@@ -1,0 +1,863 @@
+# PROMPT MAESTRO PARA GOOGLE AI STUDIO
+## Aplicación interactiva: EL DESTINO DEL GENOMA
+### Un juego de exploración sobre daños y reparación del ADN
+
+Actúa simultáneamente como desarrollador de aplicaciones educativas, diseñador de experiencias de aprendizaje basadas en problemas, especialista en biología molecular y diseñador de interfaces interactivas.
+
+Quiero que construyas una **aplicación web completamente funcional**, en español, para estudiantes universitarios de Medicina que cursan Biología Molecular.
+
+La aplicación se llamará:
+
+**EL DESTINO DEL GENOMA**
+
+Subtítulo: *Explora cómo las células enfrentan el daño del ADN, descubre sus mecanismos de reparación y construye un modelo de sus decisiones.*
+
+La experiencia debe parecer un laboratorio de exploración científica, no un cuestionario de respuestas múltiples.
+
+La aplicación debe funcionar en computadoras y tabletas, con especial atención a pantallas de computador y proyección en un salón universitario.
+
+Desarrolla una aplicación real y ejecutable con los siguientes requisitos.
+
+---
+
+# 1. FILOSOFÍA PEDAGÓGICA
+
+Los estudiantes ya conocen:
+
+- Estructura y complementariedad del ADN.
+- Replicación y fidelidad de la copia.
+- Arquitectura y regulación de los genes.
+- Transcripción, traducción y síntesis proteica.
+- Mutaciones por sustitución, inserción y deleción.
+- Diferencias entre mutaciones en regiones codificantes y reguladoras.
+- Mutágenos y lesiones moleculares.
+
+Ahora deben descubrir cómo funcionan los sistemas de reparación.
+
+No quiero comenzar mostrándoles todos los mecanismos, sino permitirles inferirlos a partir de problemas moleculares.
+
+La pregunta integradora es:
+
+**¿Cómo puede una célula conservar su información genética si su ADN está continuamente expuesto a daños, y cómo cambian sus posibilidades de reparación dependiendo del tipo de daño y de las condiciones celulares?**
+
+La actividad debe permitir que el estudiante descubra cinco relaciones:
+
+1. Diferentes agentes pueden producir diferentes tipos de daño.
+2. Un mismo agente puede producir más de una lesión.
+3. Diferentes lesiones requieren diferentes estrategias moleculares.
+4. La disponibilidad de mecanismos, información y componentes condiciona las posibilidades de reparación.
+5. Una respuesta celular puede restaurar la secuencia, conservar la continuidad física con modificaciones, dejar daño persistente o activar respuestas como la detención del ciclo celular.
+
+**La aplicación nunca debe presentar la reparación del ADN como un sistema donde cada agente mutagénico tiene exactamente un mecanismo de reparación correspondiente.**
+
+El objetivo central es comprender relaciones, restricciones, alternativas y consecuencias.
+
+---
+
+# 2. ESTRUCTURA GENERAL DE LA APLICACIÓN
+
+Crear seis espacios principales conectados entre sí:
+
+### A. Sala de exploración
+
+Aquí los estudiantes descubren agentes, fuentes de daño y lesiones.
+
+### B. Laboratorio de reparación
+
+Aquí proponen mecanismos, identifican operaciones moleculares y prueban soluciones.
+
+### C. Simulador de perturbaciones
+
+Aquí modifican condiciones celulares y observan cómo cambian las posibilidades de reparación.
+
+### D. Bitácora de descubrimientos
+
+Aquí se registran las relaciones que el estudiante ha identificado y justificado.
+
+### E. Constructor de modelos gráficos
+
+Aquí los estudiantes construyen un modelo de red utilizando los conocimientos adquiridos.
+
+### F. Sala del profesor
+
+Permite proyectar escenarios, controlar el nivel de ayuda, introducir perturbaciones y evaluar modelos.
+
+La navegación debe permitir avanzar progresivamente entre los espacios, pero también regresar a exploraciones anteriores.
+
+---
+
+# 3. DINÁMICA PRINCIPAL DEL JUEGO
+
+Cada ronda representa un problema de integridad genómica.
+
+Una ronda debe funcionar mediante las siguientes etapas.
+
+## ETAPA 1. ENCUENTRO CON EL PROBLEMA
+
+Presenta una situación biológica o experimental.
+
+Ejemplo:
+
+> Una célula epitelial humana recibe radiación ultravioleta. Posteriormente se detectan alteraciones en algunas regiones de su ADN.
+
+El estudiante recibe inicialmente información incompleta.
+
+Debe responder:
+
+- ¿Qué tipos de daño podrían producirse?
+- ¿Qué estructuras moleculares podrían alterarse?
+- ¿Cómo podría verse afectada la replicación o la transcripción?
+
+Debe seleccionar entre distintas posibilidades, incluyendo más de una cuando corresponda.
+
+Después de registrar su hipótesis, la aplicación revela información adicional y explica qué observaciones serían necesarias para comprobarla.
+
+No muestres directamente el mecanismo reparador.
+
+## ETAPA 2. IDENTIFICACIÓN DE LA LESIÓN
+
+Muestra una representación gráfica del ADN y de la lesión específica.
+
+Ejemplos visuales:
+
+- Dímeros de pirimidinas.
+- Bases oxidadas.
+- Bases alquiladas.
+- Apareamientos incorrectos.
+- Roturas de una hebra.
+- Roturas de doble hebra.
+- Aductos voluminosos.
+- Pequeñas inserciones o deleciones surgidas durante replicación.
+
+Los esquemas deben ser científicamente coherentes, simples y suficientemente claros para estudiantes de nivel introductorio.
+
+Es importante distinguir entre lesión química y mutación establecida.
+
+El estudiante debe explicar qué característica de la lesión constituye el problema.
+
+## ETAPA 3. PROPUESTA DE REPARACIÓN
+
+El estudiante explora las operaciones que podría realizar una célula:
+
+- Reconocer una alteración.
+- Revertir una modificación química.
+- Eliminar una base dañada.
+- Eliminar un segmento de nucleótidos.
+- Sintetizar ADN complementario.
+- Reconocer un error de apareamiento.
+- Utilizar información de una secuencia homóloga.
+- Procesar y unir extremos de ADN.
+- Detener temporalmente el ciclo celular.
+
+La aplicación debe permitir combinar operaciones para formar una estrategia molecular.
+
+Inicialmente pueden aparecer los nombres de las operaciones, pero no necesariamente los nombres de los mecanismos.
+
+Cuando los estudiantes construyan una estrategia adecuada, se introduce su nombre científico y una explicación.
+
+Los mecanismos que deben descubrir son:
+
+- Reparación directa de ciertas modificaciones.
+- Reparación por escisión de bases (BER).
+- Reparación por escisión de nucleótidos (NER).
+- Reparación de errores de apareamiento (MMR).
+- Recombinación homóloga (HR).
+- Unión de extremos no homólogos (NHEJ).
+
+Introducir también proofreading de la ADN polimerasa como proceso de fidelidad durante replicación, distinguiéndolo de MMR.
+
+Incluir fotoreactivación mediante fotoliasa en organismos que disponen de ella, dejando claro que los mamíferos placentarios no poseen esta reparación por fotoliasa.
+
+No exigir memorizar todas las proteínas de cada mecanismo, aunque deben identificarse componentes representativos.
+
+## ETAPA 4. EVALUACIÓN DE LA HIPÓTESIS
+
+La aplicación no debe limitarse a indicar correcto o incorrecto.
+
+Debe evaluar la propuesta en cuatro dimensiones:
+
+1. Compatibilidad con el tipo de lesión.
+2. Disponibilidad de los componentes necesarios.
+3. Compatibilidad con el contexto celular.
+4. Posibles consecuencias del mecanismo.
+
+Utiliza categorías:
+
+- Compatible y bien justificada.
+- Compatible bajo ciertas condiciones.
+- Parcialmente compatible.
+- Poco compatible con el escenario.
+- No sustentada por la evidencia presentada.
+
+Cuando una respuesta sea incorrecta, explica qué condición falta o cuál es la limitación molecular.
+
+Cuando sea parcialmente correcta, reconoce lo acertado y pide completar el razonamiento.
+
+No inventes probabilidades numéricas de éxito.
+
+## ETAPA 5. PERTURBACIÓN
+
+Una vez que el estudiante ha resuelto razonablemente un escenario, modifica una condición.
+
+Ejemplos:
+
+- La célula pasa de G1 a G2.
+- Ahora dispone de una cromátida hermana.
+- Una proteína de reparación deja de funcionar.
+- La lesión persiste mientras comienza la replicación.
+- Se acumulan múltiples lesiones.
+- Un mecanismo de reconocimiento falla.
+- La célula pierde la capacidad de detener el ciclo.
+
+El estudiante debe reconsiderar sus decisiones.
+
+Preguntar:
+
+**¿Qué ha cambiado? ¿Qué posibilidades se abren, cuáles se reducen y por qué?**
+
+Permite comparar el escenario original con el perturbado.
+
+## ETAPA 6. REGISTRO DEL DESCUBRIMIENTO
+
+Al finalizar una ronda, registra automáticamente:
+
+- Fuente del daño.
+- Lesión identificada.
+- Contexto celular.
+- Mecanismos considerados.
+- Mecanismos descartados y razones.
+- Mecanismos compatibles y sus condiciones.
+- Operaciones moleculares.
+- Consecuencias posibles.
+- Explicación elaborada por el estudiante.
+
+Esta información alimenta una bitácora, pero no construye automáticamente el modelo final.
+
+---
+
+# 4. ESCENARIOS QUE DEBEN VENIR INCORPORADOS
+
+La aplicación debe incluir al menos diez escenarios científicamente correctos y completamente funcionales.
+
+### Escenario 1. Exposición solar
+
+Una célula humana presenta un dímero de pirimidinas producido por radiación UV.
+
+Explorar lesiones UV y NER.
+
+Perturbación: defecto en una proteína esencial de NER.
+
+Conectar con xeroderma pigmentoso.
+
+### Escenario 2. Metabolismo y oxidación
+
+Una célula presenta 8-oxoguanina como resultado de daño oxidativo.
+
+Explorar el reconocimiento y eliminación de bases modificadas mediante BER.
+
+Perturbación: deficiencia de una glucosilasa apropiada.
+
+### Escenario 3. Cambio químico espontáneo
+
+Una citosina se transforma en uracilo por desaminación.
+
+Explorar el reconocimiento de una base inapropiada en ADN y su corrección mediante BER.
+
+Distinguir este problema de una sustitución ya fijada como mutación.
+
+### Escenario 4. Error durante la replicación
+
+Se incorpora una base incorrecta, y el error escapa a la corrección de pruebas.
+
+Explorar MMR.
+
+Perturbación: pérdida de función de componentes del sistema MMR.
+
+Conectar con inestabilidad de microsatélites y síndrome de Lynch.
+
+### Escenario 5. Agentes alquilantes
+
+Una base experimenta una modificación química como la formación de O6-metilguanina.
+
+Explorar la reversión directa mediante MGMT.
+
+Perturbación: ausencia de MGMT funcional.
+
+### Escenario 6. Cromosoma roto en G1
+
+Una célula humana presenta una rotura de doble hebra durante G1.
+
+Explorar NHEJ y las condiciones para procesar y unir extremos.
+
+Distinguir uniones precisas de uniones con cambios de secuencia.
+
+### Escenario 7. Cromosoma roto en G2
+
+La misma clase de rotura aparece cuando existe una cromátida hermana disponible.
+
+Explorar HR y NHEJ como posibilidades condicionadas por el contexto.
+
+Perturbación: pérdida de función de BRCA2.
+
+### Escenario 8. Aducto voluminoso
+
+Un compuesto químico produce una lesión que altera la estructura de la doble hélice.
+
+Explorar NER.
+
+Comparar este problema con la oxidación de una base aislada.
+
+### Escenario 9. Fotoreactivación
+
+Una bacteria con una fotoliasa funcional presenta un dímero de pirimidinas.
+
+Explorar la reversión de la lesión mediante fotoliasa y la alternativa de reparación por escisión.
+
+Perturbación: ausencia de luz apropiada o pérdida de la fotoliasa.
+
+Comparar con una célula humana.
+
+### Escenario 10. Edición genética
+
+Se utiliza CRISPR-Cas para producir una rotura dirigida en una región del ADN.
+
+Explorar cómo los mecanismos celulares de reparación pueden generar diferentes resultados.
+
+Comparar modificaciones por unión de extremos y reparación dirigida por homología en los contextos en que corresponda.
+
+No asumir que proporcionar ADN molde garantiza una modificación precisa.
+
+---
+
+# 5. CARTAS DE PERTURBACIÓN
+
+Crear un sistema interactivo de cartas.
+
+Cada carta debe modificar una o más variables del escenario, no simplemente añadir una pregunta.
+
+Incluir, como mínimo:
+
+1. La célula entra en G2.
+2. No existe una cromátida hermana disponible.
+3. La ADN ligasa no funciona correctamente.
+4. Una proteína de reconocimiento está ausente.
+5. La célula comienza a replicar su ADN.
+6. El sistema MMR es deficiente.
+7. La célula pierde BRCA2 funcional.
+8. La lesión persiste durante varias divisiones.
+9. Se acumulan múltiples tipos de daño.
+10. Una rotura genera extremos incompatibles.
+11. La célula no puede detener adecuadamente su ciclo.
+12. La reparación introduce una pequeña deleción.
+
+Las cartas deben afectar realmente las rutas compatibles, explicaciones y resultados posibles.
+
+Evita que funcionen solo como decoración.
+
+---
+
+# 6. MOTOR CIENTÍFICO
+
+Construir un motor de reglas científicas fundamentado en datos estructurados.
+
+Representar cada escenario mediante un modelo que contenga:
+
+- Identificador.
+- Descripción.
+- Organismo.
+- Agente o fuente.
+- Tipo o tipos de lesión.
+- Contexto inicial.
+- Mecanismos compatibles.
+- Mecanismos menos apropiados.
+- Condiciones necesarias.
+- Operaciones moleculares.
+- Proteínas representativas.
+- Perturbaciones aplicables.
+- Resultados posibles.
+- Conceptos clave.
+- Justificación científica.
+- Errores conceptuales frecuentes.
+- Referencias.
+
+Los mecanismos deben tener relaciones de muchos a muchos con las lesiones.
+
+No construir un diccionario rígido de una lesión por mecanismo.
+
+### Reglas científicas indispensables
+
+**BER:** se utiliza principalmente para ciertas alteraciones químicas de bases que pueden reconocerse y procesarse sin eliminar inicialmente un tramo largo de ADN.
+
+**NER:** remueve segmentos de ADN que contienen determinadas lesiones voluminosas o distorsionantes.
+
+**MMR:** corrige errores de apareamiento y pequeños bucles de inserción/deleción, principalmente asociados a errores que escaparon a la corrección de pruebas.
+
+**HR:** requiere información homóloga apropiada y está favorecida especialmente en S/G2, cuando existe una cromátida hermana.
+
+**NHEJ:** puede unir extremos de ADN sin utilizar un molde homólogo extenso. Puede producir uniones precisas o modificaciones de secuencia.
+
+**Reparación directa:** revierte ciertas lesiones sin sustituir un tramo de nucleótidos. No debe confundirse con MMR.
+
+**Fotoreactivación:** depende de la presencia de una fotoliasa funcional y condiciones apropiadas.
+
+**Mutaciones establecidas:** no deben tratarse automáticamente como lesiones reconocibles por los sistemas de reparación. La reparación ordinaria no reconstruye necesariamente una secuencia ancestral cuando el ADN presenta una variante estable y correctamente apareada.
+
+Las vías celulares pueden actuar de forma coordinada o competir. El contexto debe influir sobre la selección, pero evita reglas excesivamente deterministas.
+
+Distingue reparación molecular, señalización de daño, puntos de control del ciclo y apoptosis.
+
+Si un mecanismo exige conocimientos que todavía no se han introducido, presenta primero su lógica general.
+
+---
+
+# 7. SISTEMA DE PISTAS Y RETROALIMENTACIÓN
+
+Implementar tres niveles de ayuda.
+
+**Nivel 1 — Orientación**
+
+Una pregunta que invita a observar el problema sin revelar la respuesta.
+
+Ejemplo: «¿Está modificada una base individual o se ha alterado un segmento de la doble hélice?».
+
+**Nivel 2 — Pista mecanística**
+
+Indicar qué tipo de operación molecular podría resolver el problema.
+
+Ejemplo: «Considera una estrategia que elimina una base químicamente dañada y reconstruye la secuencia utilizando la hebra complementaria».
+
+**Nivel 3 — Explicación**
+
+Revelar el mecanismo y describir las operaciones moleculares que lo conforman.
+
+Las pistas deben solicitarse activamente. No deben aparecer automáticamente antes de que el estudiante haya intentado resolver el problema.
+
+Cuando exista un tutor conversacional basado en IA, este debe:
+
+- Formular preguntas orientadoras.
+- Reconocer respuestas parcialmente correctas.
+- Solicitar justificaciones.
+- Proponer comparaciones.
+- Explicar contradicciones.
+- No inventar mecanismos ni probabilidades.
+- No revelar las soluciones antes de tiempo.
+
+La evaluación científica de las opciones estructuradas debe realizarse mediante el motor de reglas. La IA puede complementar la retroalimentación, pero no sustituir las reglas verificadas.
+
+Si no hay acceso a una API de IA, toda la exploración central debe seguir funcionando.
+
+---
+
+# 8. BITÁCORA DE DESCUBRIMIENTOS
+
+Crear una sección llamada **Mi bitácora**.
+
+Debe presentar un historial de exploraciones, decisiones, cambios de hipótesis y relaciones descubiertas.
+
+Cada entrada debe permitir que el estudiante responda:
+
+- ¿Qué pensaba inicialmente?
+- ¿Qué nueva información apareció?
+- ¿Qué mecanismo resultó compatible?
+- ¿Qué condición resultó importante?
+- ¿Qué cambió cuando modifiqué el escenario?
+- ¿Qué conexión debería incorporar a mi modelo?
+
+Permitir registrar notas personales.
+
+Incluir filtros por tipo de daño, mecanismo y contexto.
+
+La bitácora debe permanecer disponible durante toda la actividad y debe poder exportarse.
+
+---
+
+# 9. CONSTRUCTOR DE MODELOS GRÁFICOS
+
+Esta es una de las funcionalidades más importantes.
+
+Al finalizar la exploración, el estudiante debe poder construir manualmente un modelo gráfico interactivo.
+
+**No generar automáticamente el diagrama correcto.**
+
+Crear un espacio de trabajo visual con nodos y conexiones que puedan arrastrarse, editarse y reorganizarse.
+
+Tipos de nodos:
+
+- Agente o fuente de daño.
+- Lesión molecular.
+- Reconocimiento.
+- Mecanismo de reparación.
+- Operación molecular.
+- Condición celular.
+- Componente molecular.
+- Resultado.
+- Consecuencia celular.
+
+Tipos de conexiones:
+
+- Produce.
+- Puede producir.
+- Es reconocido por.
+- Requiere.
+- Favorece.
+- Inhibe.
+- Repara.
+- Utiliza.
+- Depende de.
+- Puede provocar.
+- Conduce a.
+- Es una alternativa a.
+
+Cada conexión debe tener una dirección y una etiqueta visible.
+
+Por ejemplo:
+
+Radiación UV → puede producir → dímero de pirimidinas.
+
+Dímero de pirimidinas → puede repararse mediante → NER.
+
+NER → requiere → reconocimiento y escisión de un segmento lesionado.
+
+Rotura de doble hebra → puede repararse mediante → HR.
+
+HR → se favorece cuando → existe un molde homólogo apropiado.
+
+El constructor debe incluir:
+
+- Arrastrar y soltar nodos.
+- Conectar nodos.
+- Editar etiquetas.
+- Añadir condiciones sobre las conexiones.
+- Colores según categoría.
+- Zoom.
+- Desplazamiento del lienzo.
+- Deshacer y rehacer.
+- Guardado local.
+- Exportación gráfica.
+- Importación y exportación de modelos en JSON.
+
+Permitir agregar nodos y conexiones creados por el estudiante, además de los sugeridos por la aplicación.
+
+Para implementar el grafo puedes utilizar React Flow o una alternativa equivalente que funcione correctamente.
+
+La construcción debe ser abierta: no limitar a los estudiantes a reproducir un único esquema preestablecido.
+
+---
+
+# 10. EVALUACIÓN DEL MODELO
+
+Agregar una función llamada **Evaluar mi modelo**.
+
+Esta función debe examinar:
+
+1. Precisión científica de los mecanismos y relaciones.
+2. Cobertura de fuentes de daño, lesiones y estrategias.
+3. Representación de condiciones y alternativas.
+4. Descripción de consecuencias.
+5. Claridad y organización de la red.
+
+Rúbrica:
+
+| Criterio | Puntaje |
+|---|---:|
+| Precisión científica | 3 |
+| Cobertura de mecanismos y lesiones | 2 |
+| Condiciones y alternativas | 2 |
+| Consecuencias | 2 |
+| Claridad gráfica | 1 |
+| **Total** | **10** |
+
+El sistema debe identificar conexiones correctas, conexiones incompletas, contradicciones y componentes importantes que todavía no aparecen.
+
+La retroalimentación debe sugerir mejoras sin reconstruir el diagrama por el estudiante.
+
+No evaluar como incorrecta una relación científicamente válida solamente porque no coincida literalmente con una solución de referencia.
+
+Si alguna conexión no puede evaluarse con suficiente confianza, marcarla para revisión del profesor, en lugar de inventar una valoración.
+
+Permitir al profesor ajustar la calificación.
+
+---
+
+# 11. MODALIDAD DE CLASE
+
+La aplicación debe incluir una modalidad preparada para dos sesiones.
+
+### Sesión 1 — Exploración (60 minutos)
+
+Los estudiantes trabajan individualmente.
+
+Distribución sugerida:
+
+- 10 minutos: introducción al desafío.
+- 15 minutos: exploración de agentes y lesiones.
+- 20 minutos: construcción y prueba de estrategias.
+- 15 minutos: perturbaciones y registro de descubrimientos.
+
+No es necesario completar todos los escenarios. La aplicación debe recomendar escenarios diferentes para ampliar la diversidad de descubrimientos en el grupo.
+
+### Sesión 2 — Construcción de modelos (120 minutos)
+
+**Primera fase: 30 minutos individuales.**
+
+Cada estudiante organiza sus descubrimientos en un grafo.
+
+**Segunda fase: 30 minutos en tríos.**
+
+Los estudiantes comparan sus redes y construyen un modelo consensuado.
+
+Deben discutir relaciones contradictorias, mecanismos faltantes y condiciones que no habían considerado.
+
+**Tercera fase: 60 minutos colectivos.**
+
+Los grupos presentan sus modelos.
+
+El profesor utiliza una pantalla de proyección para explorar contradicciones, incorporar nuevas relaciones y construir un modelo integrado.
+
+Crear una modalidad de comparación que permita cargar dos modelos exportados y mostrar sus diferencias estructurales.
+
+No asumir que existe sincronización en tiempo real entre dispositivos. Si se implementa colaboración en vivo, debe utilizar un servicio de sincronización auténtico; de lo contrario, utilizar exportación e importación de archivos.
+
+---
+
+# 12. PUNTUACIÓN Y GAMIFICACIÓN
+
+El juego debe motivar la exploración científica, no la velocidad.
+
+Asignar puntos por:
+
+- Identificar correctamente una lesión.
+- Proponer operaciones moleculares compatibles.
+- Justificar un mecanismo.
+- Reconocer una condición importante.
+- Corregir una hipótesis a partir de nueva evidencia.
+- Identificar una limitación.
+- Reconocer alternativas.
+- Explicar resultados posibles.
+
+No penalizar excesivamente las hipótesis iniciales equivocadas.
+
+Una hipótesis equivocada, revisada correctamente después de obtener evidencia, debe reconocerse como una oportunidad de aprendizaje.
+
+Crear logros como:
+
+- Investigador de lesiones.
+- Explorador de rutas.
+- Especialista en recombinación.
+- Detector de condiciones.
+- Constructor de modelos.
+
+Estos logros deben reflejar aprendizajes demostrados, no simplemente el número de clics.
+
+La puntuación de exploración y la evaluación del modelo gráfico deben mantenerse separadas.
+
+---
+
+# 13. SALA DEL PROFESOR
+
+Agregar un modo de profesor que pueda activarse desde la interfaz.
+
+Debe permitir:
+
+- Seleccionar escenarios.
+- Elegir perturbaciones.
+- Mostrar u ocultar pistas.
+- Revelar explicaciones.
+- Ver las justificaciones científicas.
+- Proyectar un escenario a pantalla completa.
+- Mostrar una comparación de escenarios.
+- Importar modelos de estudiantes.
+- Revisar y calificar modelos.
+- Reiniciar una actividad.
+- Activar o desactivar la puntuación.
+
+Crear un **modo de discusión colectiva** con botones grandes, tipografía legible y visualizaciones adecuadas para proyección.
+
+El profesor podrá preguntar:
+
+«¿Qué pasaría si esta célula estuviera en G1 en lugar de G2?».
+
+La aplicación deberá permitir cambiar la fase y mostrar qué posibilidades quedan favorecidas, restringidas o disponibles.
+
+No usar cambios meramente decorativos: las condiciones deben afectar el funcionamiento del simulador.
+
+---
+
+# 14. DISEÑO VISUAL
+
+Quiero una interfaz moderna, sobria y científicamente elegante.
+
+Estilo:
+
+- Laboratorio de biología molecular.
+- Diseño limpio, con fondo claro y acentos azul petróleo y verde azulado.
+- Diagramas científicos minimalistas.
+- Buen contraste.
+- Tipografía muy legible.
+- Animaciones sutiles y funcionales.
+- Evitar elementos infantiles y exceso de estímulos visuales.
+
+Incluir ilustraciones de ADN que representen diferentes lesiones.
+
+Cuando se seleccione una lesión, el gráfico debe cambiar para mostrar su naturaleza:
+
+- Base modificada.
+- Distorsión de la hélice.
+- Ruptura de una hebra.
+- Ruptura de ambas hebras.
+- Apareamiento incorrecto.
+
+Las representaciones pueden ser esquemáticas, pero deben ser molecularmente coherentes.
+
+En el laboratorio de reparación, mostrar visualmente las operaciones:
+
+Reconocimiento → modificación o eliminación → reconstrucción → unión o resolución.
+
+Estas animaciones deben representar el mecanismo realmente seleccionado, no reproducir una animación genérica para todos los mecanismos.
+
+El diseño debe funcionar en modo claro y oscuro.
+
+---
+
+# 15. CONTENIDOS CIENTÍFICOS Y REFERENCIAS
+
+El nivel debe ser apropiado para estudiantes de Medicina en un curso introductorio de Biología Molecular.
+
+Priorizar la comprensión de procesos y principios sobre la memorización exhaustiva de complejos proteicos.
+
+Usar como referencias científicas principales:
+
+- Alberts et al., *Molecular Biology of the Cell*.
+- Lodish et al., *Molecular Cell Biology*.
+- Watson et al., *Molecular Biology of the Gene*.
+- Revisiones científicas reconocidas sobre reparación del ADN.
+
+Crear una sección de referencias y conceptos.
+
+No inventar citas, DOI ni capítulos específicos. Cuando se suministren enlaces verificables, utilizarlos; de lo contrario, presentar las obras como bibliografía general.
+
+Distinguir claramente las simplificaciones docentes de las afirmaciones mecanísticas.
+
+---
+
+# 16. REQUISITOS TÉCNICOS
+
+Construye la aplicación utilizando tecnologías web modernas compatibles con Google AI Studio Build.
+
+Preferir React y TypeScript, con una estructura modular.
+
+La aplicación debe incluir:
+
+- Todos los escenarios precargados.
+- Motor de reglas y evaluación contextual.
+- Estado persistente de las exploraciones.
+- Bitácora.
+- Constructor de grafos.
+- Exportación e importación de sesiones.
+- Modo de profesor.
+- Visualizaciones de lesiones.
+- Interfaz en español.
+
+Evitar dependencias innecesarias.
+
+La aplicación debe poder utilizarse sin un servidor propio para sus funciones esenciales.
+
+Utilizar almacenamiento local para guardar exploraciones y modelos cuando no exista backend.
+
+No exigir registro de usuarios para probar la aplicación.
+
+No simular funcionalidades que no existen. Si una capacidad requiere servidor o servicio externo, implementar una alternativa local operativa y explicar la diferencia.
+
+La información personal no es necesaria: permitir seudónimos o identificadores de grupo.
+
+---
+
+# 17. CALIDAD Y PRUEBAS
+
+Antes de considerar terminada la aplicación, comprobar:
+
+1. Que los diez escenarios se pueden iniciar y resolver.
+2. Que las perturbaciones modifican efectivamente las condiciones del problema.
+3. Que una lesión puede admitir más de una estrategia cuando corresponda.
+4. Que no se aceptan rutas científicamente incompatibles sin explicación.
+5. Que la bitácora registra decisiones y revisiones.
+6. Que el estudiante puede crear y editar un grafo.
+7. Que el grafo puede guardarse, exportarse e importarse.
+8. Que se pueden comparar modelos de diferentes estudiantes.
+9. Que la interfaz funciona en pantallas de computador y tabletas.
+10. Que ninguna respuesta correcta aparece revelada antes del intento del estudiante.
+
+Crear al menos tres pruebas completas de extremo a extremo:
+
+- Lesión por radiación UV que conduce a explorar NER.
+- Error de apareamiento que conduce a explorar MMR.
+- Rotura de doble hebra cuya interpretación cambia entre G1 y G2.
+
+Comprobar también que el estudiante pueda modificar una hipótesis y que la aplicación mantenga el historial de su razonamiento.
+
+Si alguna funcionalidad avanzada presenta dificultades, priorizar el funcionamiento real del ciclo completo: escenario → hipótesis → reparación → perturbación → bitácora → modelo gráfico.
+
+---
+
+# 18. EXPERIENCIA INICIAL
+
+Al abrir la aplicación, mostrar:
+
+**EL DESTINO DEL GENOMA**
+
+*Cada día, el ADN de tus células experimenta miles de alteraciones. ¿Cómo consigue una célula preservar su información genética?*
+
+Debajo, tres opciones principales:
+
+**Comenzar exploración**  
+Accede al primer escenario sin conocer las respuestas.
+
+**Continuar mi investigación**  
+Recupera escenarios, hipótesis y descubrimientos anteriores.
+
+**Construir mi modelo**  
+Abre el constructor gráfico con la bitácora disponible.
+
+Agregar una entrada secundaria al modo del profesor.
+
+El primer escenario recomendado será el de la radiación UV, porque permite conectar un agente conocido con una lesión estructural y una estrategia molecular concreta.
+
+En la primera ronda, ofrecer más orientación que en las posteriores.
+
+A medida que el estudiante adquiere experiencia, reducir progresivamente las pistas automáticas.
+
+---
+
+# 19. RESULTADO PEDAGÓGICO FINAL
+
+Al terminar la actividad, el estudiante debe haber construido una red que conecte:
+
+**Fuentes de daño → Lesiones del ADN → Reconocimiento → Estrategias de reparación → Condiciones moleculares → Resultados y consecuencias celulares.**
+
+El modelo debe reflejar que existen alternativas, restricciones y múltiples rutas.
+
+No debe ser una lista de definiciones.
+
+Debe representar un sistema de relaciones causales y condicionales.
+
+La última pregunta que presentará la aplicación será:
+
+**¿Qué sucede cuando una célula no logra reparar adecuadamente su ADN? ¿Cómo decide si continúa dividiéndose, detiene su ciclo o inicia su muerte programada?**
+
+Esta pregunta no debe resolverse completamente, porque introduce la siguiente unidad del curso.
+
+---
+
+# 20. INSTRUCCIÓN FINAL DE DESARROLLO
+
+No respondas con una propuesta conceptual, un documento de diseño ni una lista de funcionalidades futuras.
+
+**Construye la aplicación interactiva, implementa las reglas, crea los escenarios y conecta todos los módulos.**
+
+Empieza por una versión completamente funcional que permita recorrer el ciclo pedagógico completo, y después incorpora las características visuales y de evaluación avanzada.
+
+No utilices controles ficticios, contenido de relleno, rutas científicas inventadas ni simulaciones que solamente cambien el texto sin modificar las condiciones del juego.
+
+La prioridad es que los estudiantes puedan **experimentar con posibilidades, construir hipótesis, cometer errores, revisar sus explicaciones y descubrir las relaciones que organizan la reparación del ADN**.
+
+El conocimiento debe surgir de la exploración, y el modelo gráfico debe ser una construcción intelectual del estudiante, no una respuesta generada automáticamente.
